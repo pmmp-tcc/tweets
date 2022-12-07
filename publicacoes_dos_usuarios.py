@@ -11,7 +11,7 @@ import pandas as pd
 
 """
 
-Path = '/content/drive/MyDrive/Projeto ITS'
+Path = '/content/drive/MyDrive/XXXX'
 
 os.chdir(Path)
 
@@ -87,12 +87,11 @@ for i in range(len(json)):
       value[i].append(json[i]['is_quote_status'])
       value[i].append(json[i]['retweet_count'])
       value[i].append(json[i]['favorite_count'])
-      value[i].append(json[i]['favorited'])
-      value[i].append(json[i]['retweeted'])
+    
 
 keys = ['user', 'created_at', 'id_srt', 'text', 'lang', 'source', 'in_reply_to ',
         'geo', 'coordinates', 'place', 'contributors', 'is_quote_status', 'retweet_count',
-        'favorite_count', 'favorited', 'retweeted']
+        'favorite_count']
 
 """salvando em csv"""
 
